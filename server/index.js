@@ -10,7 +10,7 @@ const rawData = fs.readFileSync("messages.json");
 const messagesData = JSON.parse(rawData);
 const socketIO = require("socket.io")(http, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "http://localhost:4200",
   },
 });
 
